@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Collection</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#">All</a>
+        <a href="#">Spring-Summer</a>
+        <a href="#">Sweatshirt</a>
+        <a href="#">Sneakers</a>
+        <a href="#">Gadgets</a>
+        <a href="#">Outdoor</a>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item small">
+            <img src="Image-5.png" alt="Shoes">
+            <div class="info">BUY 2 GET UP TO 50% OFF</div>
+        </div>
+        <div class="grid-item medium">
+            <img src="Image-4.png" alt="Women Fashion">
+            <div class="label">Winter Jacket</div>
+            <h2>VINTAGE LOOK FOR WOMEN</h2>
+            <button>Shop Now</button>
+        </div>
+        <div class="grid-item small">
+            <img src="Image-3.png" alt="Men Fashion">
+            <div class="label">Winter Jacket</div>
+            <h2>FASHION FOR MEN</h2>
+            <button>Shop Now</button>
+        </div>
+        <div class="grid-item small">
+            <img src="Image-7.png" alt="Sunglasses">
+            <div class="info">40% OFF ON SUNGLASSES</div>
+        </div>
+        <div class="grid-item wide">
+            <div class="wide-content">
+                <img src="Image-8.png" alt="Brand New Styles">
+                <div class="info">WE OFFER BRAND NEW STYLES</div>
+                <p>SIGN UP NOW AND GET 10% OFF</p>
+                <button>See Full Collection</button>
+            </div>
+        </div>
+    </div>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.grid-item .info, 
+.grid-item h2, 
+.grid-item .label {
+    position: absolute;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px 10px;
+}
+
+.grid-item .label {
+    top: 10px;
+    background-color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.grid-item h2 {
+    bottom: 60px;
+    font-size: 20px;
+}
+
+.grid-item button {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.large {
+    grid-column: span 4;
+    grid-row: span 2;
+    height: 400px;
+}
+
+.medium {
+    grid-column: span 4;
+    grid-row: span 2;
+    height: 400px;
+}
+
+.small {
+    grid-column: span 2;
+    height: 200px;
+}
+
+.wide {
+    grid-column: span 12;
+    height: 300px;
+    background-color: #00bcd4;
+    color: white;
+    text-align: center;
+}
+
+.wide-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.wide p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.wide button {
+    background-color: white;
+    border: 2px solid white;
+    color: #00bcd4;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+
+</style>
+</body>
+</html>

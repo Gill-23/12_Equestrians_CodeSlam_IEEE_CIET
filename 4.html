@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product types</title>
+</head>
+<body>
+  <section class="featured-products">
+    <h2>PRODUCT TYPES</h2>
+    <h3> upto 30% off</h3>
+    <div class="product-list">
+      <div class="product-item">
+        <img src="Image-10.png" alt="Product 1">
+        <h3>Ted Baker Womens Light</h3>
+        <p>Gucci</p>
+        <a href="#" class="work-more">Shop Now</a>
+      </div>
+      <div class="product-item">
+        <img src="Image-9.png" alt="Product 2">
+        <h3>Ted Baker Womens Light</h3>
+        <p>Gucci</p>
+        <a href="#" class="work-more">Shop Now</a>
+
+      </div>
+      <div class="product-item">
+        <img src="Image-11.png" alt="Product 3">
+        <h3>Ted Baker Womens Light</h3>
+        <p>Gucci</p>
+        <a href="#" class="work-more">Shop Now</a>
+      </div>
+    </div>
+    <button class="show-more">Show More</button>
+  </section>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.featured-products {
+  text-align: center;
+  padding: 40px 10px;
+}
+
+.featured-products h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.categories span {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: lowercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.categories span:hover {
+  color: #333;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  max-width: 260px;
+  border: 1px solid #ddd;
+  object-fit: cover;
+}
+
+.product-item h3 {
+  font-size: 14px;
+  margin: 8px 0 4px;
+  color: #333;
+  font-weight: 500;
+}
+
+.product-item p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 12px;
+}
+
+.product-item .old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 5px;
+}
+
+.product-item .new-price {
+  color: black;
+  font-weight: bold;
+}
+
+.show-more {
+    background-color: white;
+  border: 2px solid #ccc;
+  padding: 12px 40px;
+  margin-top: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.show-more:hover {
+  background-color: #f1f1f1;
+}
+.work-more {
+  background-color: white;
+  border: 2px solid #ccc;
+  padding: 12px 40px;
+  margin-top: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: inline-block;
+        margin: 10px;
+        padding: 12px 30px;
+        background-color: #000000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+}
+
+.work-more:hover {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 1024px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-list {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .categories {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .product-item img {
+    max-width: 100%;
+  }
+}
+  </style>
+</body>
+</html>
